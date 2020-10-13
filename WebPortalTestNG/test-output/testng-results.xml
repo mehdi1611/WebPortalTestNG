@@ -1,29 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="5" total="9" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-13T20:00:37 WEST" name="Default suite" finished-at="2020-10-13T20:00:44 WEST" duration-ms="6691">
+  <suite started-at="2020-10-13T20:48:37 WEST" name="WebPortalTestNG by groups" finished-at="2020-10-13T20:48:37 WEST" duration-ms="50">
     <groups>
+      <group name="logout">
+        <method signature="LoginGroupsTest.LoginLougout()[pri:2, instance:ui.LoginGroupsTest@7e0b85f9]" name="LoginLougout" class="ui.LoginGroupsTest"/>
+        <method signature="LoginGroupsTest.Logout1()[pri:1, instance:ui.LoginGroupsTest@7e0b85f9]" name="Logout1" class="ui.LoginGroupsTest"/>
+        <method signature="LoginGroupsTest.Logout2()[pri:1, instance:ui.LoginGroupsTest@7e0b85f9]" name="Logout2" class="ui.LoginGroupsTest"/>
+        <method signature="LoginGroupsTest.Logout3()[pri:1, instance:ui.LoginGroupsTest@7e0b85f9]" name="Logout3" class="ui.LoginGroupsTest"/>
+      </group> <!-- logout -->
+      <group name="Login">
+        <method signature="LoginGroupsTest.LoginLougout()[pri:2, instance:ui.LoginGroupsTest@7e0b85f9]" name="LoginLougout" class="ui.LoginGroupsTest"/>
+      </group> <!-- Login -->
     </groups>
-    <test started-at="2020-10-13T20:00:37 WEST" name="Default test" finished-at="2020-10-13T20:00:44 WEST" duration-ms="6691">
-      <class name="ui.VerifyTitleAndTextTest">
-        <test-method is-config="true" signature="bfTest()[pri:0, instance:ui.VerifyTitleAndTextTest@13e39c73]" started-at="2020-10-13T20:00:37 WEST" name="bfTest" finished-at="2020-10-13T20:00:43 WEST" duration-ms="5954" status="PASS">
+    <test started-at="2020-10-13T20:48:37 WEST" name="GRP-logout" finished-at="2020-10-13T20:48:37 WEST" duration-ms="50">
+      <class name="ui.LoginGroupsTest">
+        <test-method signature="Logout1()[pri:1, instance:ui.LoginGroupsTest@7e0b85f9]" started-at="2020-10-13T20:48:37 WEST" name="Logout1" finished-at="2020-10-13T20:48:37 WEST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bfTest -->
-        <test-method signature="buttonTest()[pri:0, instance:ui.VerifyTitleAndTextTest@13e39c73]" started-at="2020-10-13T20:00:43 WEST" name="buttonTest" finished-at="2020-10-13T20:00:43 WEST" duration-ms="67" status="PASS">
+        </test-method> <!-- Logout1 -->
+        <test-method signature="Logout2()[pri:1, instance:ui.LoginGroupsTest@7e0b85f9]" started-at="2020-10-13T20:48:37 WEST" name="Logout2" finished-at="2020-10-13T20:48:37 WEST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- buttonTest -->
-        <test-method signature="titleTest()[pri:0, instance:ui.VerifyTitleAndTextTest@13e39c73]" started-at="2020-10-13T20:00:43 WEST" name="titleTest" finished-at="2020-10-13T20:00:43 WEST" duration-ms="10" status="PASS">
+        </test-method> <!-- Logout2 -->
+        <test-method signature="Logout3()[pri:1, instance:ui.LoginGroupsTest@7e0b85f9]" started-at="2020-10-13T20:48:37 WEST" name="Logout3" finished-at="2020-10-13T20:48:37 WEST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- titleTest -->
-        <test-method is-config="true" signature="aftTest()[pri:0, instance:ui.VerifyTitleAndTextTest@13e39c73]" started-at="2020-10-13T20:00:43 WEST" name="aftTest" finished-at="2020-10-13T20:00:44 WEST" duration-ms="620" status="PASS">
+        </test-method> <!-- Logout3 -->
+        <test-method signature="LoginLougout()[pri:2, instance:ui.LoginGroupsTest@7e0b85f9]" started-at="2020-10-13T20:48:37 WEST" name="LoginLougout" finished-at="2020-10-13T20:48:37 WEST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- aftTest -->
-      </class> <!-- ui.VerifyTitleAndTextTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- LoginLougout -->
+      </class> <!-- ui.LoginGroupsTest -->
+    </test> <!-- GRP-logout -->
+  </suite> <!-- WebPortalTestNG by groups -->
 </testng-results>

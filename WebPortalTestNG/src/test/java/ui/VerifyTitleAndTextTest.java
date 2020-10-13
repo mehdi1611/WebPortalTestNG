@@ -40,8 +40,8 @@ public class VerifyTitleAndTextTest {
 	
 	@AfterTest
 	public void aftTest() {
-		softAsrt.assertAll();
 		driver.quit();
+		softAsrt.assertAll();
 	}
 	
 }
