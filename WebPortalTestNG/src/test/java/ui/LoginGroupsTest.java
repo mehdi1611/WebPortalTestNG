@@ -5,6 +5,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+@Test(groups="logGroup")
 public class LoginGroupsTest {
 	
 	@Test(priority = 2, groups = "Login")

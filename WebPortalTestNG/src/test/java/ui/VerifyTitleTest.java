@@ -14,7 +14,7 @@ public class VerifyTitleTest {
 	static WebDriver driver;
 	@Test
 	public void titleTest() {
-		String expectedTitle = "Eslectronics, Cars, Fashion, Collectibles & More | eBay";
+		String expectedTitle = "Electronics, Cars, Fashion, Collectibles & More | eBay";
 		System.out.println("test");
 		
 		String actualTitle = driver.getTitle();
