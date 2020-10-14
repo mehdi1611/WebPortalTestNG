@@ -11,6 +11,7 @@
     <classes>
       <class name="ui.LoginTest"/>
       <class name="ui.LoginGroupsTest"/>
+      <class name="ui.LoginGroupsTestWithCommon"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

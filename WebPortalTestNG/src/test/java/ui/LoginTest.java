@@ -5,7 +5,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class LoginTest {
+import common.CommonDataSetup;
+
+public class LoginTest extends CommonDataSetup{
 	
 	@Test(priority = 2,description = "this is a login test")
 	public void Login() {

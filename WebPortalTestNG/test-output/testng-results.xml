@@ -1,38 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="9" passed="4" failed="0" skipped="0">
+<testng-results ignored="1" total="5" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-13T20:48:37 WEST" name="WebPortalTestNG by groups" finished-at="2020-10-13T20:48:37 WEST" duration-ms="50">
+  <suite started-at="2020-10-14T03:10:25 WEST" name="Default suite" finished-at="2020-10-14T03:10:25 WEST" duration-ms="51">
     <groups>
-      <group name="logout">
-        <method signature="LoginGroupsTest.LoginLougout()[pri:2, instance:ui.LoginGroupsTest@7e0b85f9]" name="LoginLougout" class="ui.LoginGroupsTest"/>
-        <method signature="LoginGroupsTest.Logout1()[pri:1, instance:ui.LoginGroupsTest@7e0b85f9]" name="Logout1" class="ui.LoginGroupsTest"/>
-        <method signature="LoginGroupsTest.Logout2()[pri:1, instance:ui.LoginGroupsTest@7e0b85f9]" name="Logout2" class="ui.LoginGroupsTest"/>
-        <method signature="LoginGroupsTest.Logout3()[pri:1, instance:ui.LoginGroupsTest@7e0b85f9]" name="Logout3" class="ui.LoginGroupsTest"/>
-      </group> <!-- logout -->
-      <group name="Login">
-        <method signature="LoginGroupsTest.LoginLougout()[pri:2, instance:ui.LoginGroupsTest@7e0b85f9]" name="LoginLougout" class="ui.LoginGroupsTest"/>
-      </group> <!-- Login -->
     </groups>
-    <test started-at="2020-10-13T20:48:37 WEST" name="GRP-logout" finished-at="2020-10-13T20:48:37 WEST" duration-ms="50">
-      <class name="ui.LoginGroupsTest">
-        <test-method signature="Logout1()[pri:1, instance:ui.LoginGroupsTest@7e0b85f9]" started-at="2020-10-13T20:48:37 WEST" name="Logout1" finished-at="2020-10-13T20:48:37 WEST" duration-ms="8" status="PASS">
+    <test started-at="2020-10-14T03:10:25 WEST" name="Default test" finished-at="2020-10-14T03:10:25 WEST" duration-ms="51">
+      <class name="ui.DataProviderDemoTest">
+        <test-method signature="test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ui.DataProviderDemoTest@29626d54]" started-at="2020-10-14T03:10:25 WEST" name="test1" data-provider="dataSet1" finished-at="2020-10-14T03:10:25 WEST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Logout1 -->
-        <test-method signature="Logout2()[pri:1, instance:ui.LoginGroupsTest@7e0b85f9]" started-at="2020-10-13T20:48:37 WEST" name="Logout2" finished-at="2020-10-13T20:48:37 WEST" duration-ms="1" status="PASS">
+        </test-method> <!-- test1 -->
+        <test-method signature="test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ui.DataProviderDemoTest@29626d54]" started-at="2020-10-14T03:10:25 WEST" name="test1" data-provider="dataSet1" finished-at="2020-10-14T03:10:25 WEST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test2]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Logout2 -->
-        <test-method signature="Logout3()[pri:1, instance:ui.LoginGroupsTest@7e0b85f9]" started-at="2020-10-13T20:48:37 WEST" name="Logout3" finished-at="2020-10-13T20:48:37 WEST" duration-ms="1" status="PASS">
+        </test-method> <!-- test1 -->
+        <test-method signature="test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ui.DataProviderDemoTest@29626d54]" started-at="2020-10-14T03:10:25 WEST" name="test1" data-provider="dataSet1" finished-at="2020-10-14T03:10:25 WEST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test3]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Logout3 -->
-        <test-method signature="LoginLougout()[pri:2, instance:ui.LoginGroupsTest@7e0b85f9]" started-at="2020-10-13T20:48:37 WEST" name="LoginLougout" finished-at="2020-10-13T20:48:37 WEST" duration-ms="1" status="PASS">
+        </test-method> <!-- test1 -->
+        <test-method signature="test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ui.DataProviderDemoTest@29626d54]" started-at="2020-10-14T03:10:25 WEST" name="test1" data-provider="dataSet1" finished-at="2020-10-14T03:10:25 WEST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test4]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginLougout -->
-      </class> <!-- ui.LoginGroupsTest -->
-    </test> <!-- GRP-logout -->
-  </suite> <!-- WebPortalTestNG by groups -->
+        </test-method> <!-- test1 -->
+      </class> <!-- ui.DataProviderDemoTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -5,10 +5,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import common.CommonDataSetup;
-
 @Test(groups="logGroup")
-public class LoginGroupsTest extends CommonDataSetup{
+public class LoginGroupsTestWithCommon extends common.CommonDataSetup{
 	
 	@Test(priority = 2, groups = "Login")
 	public void Login1() {

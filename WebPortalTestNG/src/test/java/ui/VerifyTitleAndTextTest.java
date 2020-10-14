@@ -9,15 +9,16 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import common.CommonDataSetup;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
-public class VerifyTitleAndTextTest {
+public class VerifyTitleAndTextTest extends CommonDataSetup{
 	static WebDriver driver;
 	static SoftAssert softAsrt = new SoftAssert();
 	@Test
 	public void titleTest() {
-		String expectedTitle = "Eslectronics, Cars, Fashion, Collectibles & More | eBay";
+		String expectedTitle = "0Electronics, Cars, Fashion, Collectibles & More | eBay";
 		System.out.println("test");
 		String actualTitle = driver.getTitle();
 		softAsrt.assertEquals(actualTitle, expectedTitle, "The title isn't correct....");
@@ -41,6 +42,7 @@ public class VerifyTitleAndTextTest {
 	@AfterTest
 	public void aftTest() {
 		driver.quit();
+		System.out.println("driver quit??");
 		softAsrt.assertAll();
 	}
 	
