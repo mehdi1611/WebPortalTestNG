@@ -8,14 +8,30 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">51</td><td></td><td></td></tr>
+<tr><th colspan="8">using listener</th></tr>
+<tr><td><a href="#t0">Reading browser details from testng.xml</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num attn">1</td><td class="num">8 302</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">ui.DataProviderDemoTest</td><td><a href="#m0">test1</a></td><td rowspan="4">1602641425270</td><td rowspan="4">5</td></tr><tr class="passedeven"><td><a href="#m1">test1</a></td></tr><tr class="passedeven"><td><a href="#m2">test1</a></td></tr><tr class="passedeven"><td><a href="#m3">test1</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">using listener</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Reading browser details from testng.xml &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">ui.ListenerDemoTest</td><td><a href="#m0">launchApp</a></td><td rowspan="1">1602726444659</td><td rowspan="1">1022</td></tr><tr><th colspan="4">Reading browser details from testng.xml &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="4">ui.ListenerDemoTest</td><td><a href="#m1">launchApp</a></td><td rowspan="4">1602726440758</td><td rowspan="4">1046</td></tr><tr class="retriedeven"><td><a href="#m2">launchApp</a></td></tr><tr class="retriedeven"><td><a href="#m3">launchApp</a></td></tr><tr class="retriedeven"><td><a href="#m4">launchApp</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">ui.DataProviderDemoTest#test1</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>user1</td><td>pass1</td><td>test1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">ui.DataProviderDemoTest#test1</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>user4</td><td>pass4</td><td>test4</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">ui.DataProviderDemoTest#test1</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>user2</td><td>pass2</td><td>test2</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">ui.DataProviderDemoTest#test1</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>user3</td><td>pass3</td><td>test3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Reading browser details from testng.xml</h2><h3 id="m0">ui.ListenerDemoTest#launchApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at ui.ListenerDemoTest.launchApp(ListenerDemoTest.java:14)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">ui.ListenerDemoTest#launchApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at ui.ListenerDemoTest.launchApp(ListenerDemoTest.java:14)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">ui.ListenerDemoTest#launchApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at ui.ListenerDemoTest.launchApp(ListenerDemoTest.java:14)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">ui.ListenerDemoTest#launchApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at ui.ListenerDemoTest.launchApp(ListenerDemoTest.java:14)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">ui.ListenerDemoTest#launchApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at ui.ListenerDemoTest.launchApp(ListenerDemoTest.java:14)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

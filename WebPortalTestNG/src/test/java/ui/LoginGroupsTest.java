@@ -1,4 +1,5 @@
 package ui;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
@@ -23,6 +24,7 @@ public class LoginGroupsTest extends CommonDataSetup{
 	@Test(priority = 2, groups = "Login")
 	public void Login3() {
 		System.out.println("Login is successful3");
+//		Assert.assertTrue(false);
 	}
 
 	@Test(priority = 2, groups = "Login")

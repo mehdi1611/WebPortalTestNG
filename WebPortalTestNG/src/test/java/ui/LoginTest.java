@@ -1,41 +1,44 @@
 package ui;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import common.CommonDataSetup;
+import static org.openqa.selenium.support.locators.RelativeLocator.withTagName;
 
-public class LoginTest extends CommonDataSetup{
-	
-	@Test(priority = 2,description = "this is a login test")
-	public void Login() {
-		System.out.println("Login is successful");
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class LoginTest {
+//	public static String browser = "firefox";
+	public static WebDriver driver;
+
+	@Parameters({"browser"})
+	@Test
+	public void launchApplication(String browser) {
+		//System.out.println(browser.toUpperCase().equals("FIREFOX"));
+		if (browser.toUpperCase().equals("FIREFOX")) {
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+			//System.out.println("firefox");
+		} else if (browser.toUpperCase().equals("CHROME")) {
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+			System.out.println("chrome");
+		}
+		driver.get("https://www.saucedemo.com/");
+//		driver.findElement(By.id("user-name")).sendKeys("standard_user");
+//		driver.findElement(By.id("password")).sendKeys("secret_sauce");
+//		driver.findElement(By.xpath("//*[@id=\"login-button\"]")).click();
+//		driver.close();
+		WebElement password = driver.findElement(By.id("password"));
+		WebElement login	= driver.findElement(withTagName("input").above(password));
+		WebElement button	= driver.findElement(withTagName("input").below(password));
+		login.sendKeys("mehdi");
+		button.click();
 	}
-	
-	@Test(priority = 1,description = "this is a logout test")
-	public void Logout() {
-		System.out.println("Logout is successful");
-	}
-	
-	@BeforeTest
-	public void beforeLogin() {
-		System.out.println("this is executed before all the tests");
-	}
-	
-	@AfterTest
-	public void afterLogin() {
-		System.out.println("this is executed after all the test...");
-	}
-	
-	@BeforeMethod
-	public void beforeEachTest() {
-		System.out.println("this is executed before each test...");
-	}
-	
-	@AfterMethod
-	public void afterEachTest() {
-		System.out.println("this is executed after each test...");
-	}
+
 }
