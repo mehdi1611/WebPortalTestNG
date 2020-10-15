@@ -2,18 +2,19 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [using listener]" guice-stage="DEVELOPMENT">
   <listeners>
-    <listener class-name="common.RetryListener"/>
+    <listener class-name="common.Listeners"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
   </listeners>
   <test thread-count="5" name="Reading browser details from testng.xml(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="ui.ListenerDemoTest">
+      <class name="ui.ReportTest">
         <methods>
           <include name="closeBrowser"/>
-          <include name="launchApp"/>
           <include name="launchBrowser"/>
+          <include name="reporterTest1"/>
         </methods>
-      </class> <!-- ui.ListenerDemoTest -->
+      </class> <!-- ui.ReportTest -->
     </classes>
   </test> <!-- Reading browser details from testng.xml(failed) -->
 </suite> <!-- Failed suite [using listener] -->
