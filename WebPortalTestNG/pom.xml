@@ -12,6 +12,12 @@
 			<artifactId>webdrivermanager</artifactId>
 			<version>4.2.2</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.17</version>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -37,4 +43,9 @@
 			<version>2.4.9</version>
 		</dependency>
 	</dependencies>
+	<!-- <properties> -->
+	<!-- <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> -->
+	<!-- <suiteXmlFile>${basedir}/testng.xml</suiteXmlFile> -->
+	<!-- <skipTests>true</skipTests> -->
+	<!-- </properties> -->
 </project>

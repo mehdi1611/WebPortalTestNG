@@ -8,13 +8,13 @@
   <test thread-count="5" name="Reading browser details from testng.xml(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="ui.ReportTest">
+      <class name="ui.DependencyTest">
         <methods>
           <include name="closeBrowser"/>
           <include name="launchBrowser"/>
-          <include name="reporterTest1"/>
+          <include name="userRegistration"/>
         </methods>
-      </class> <!-- ui.ReportTest -->
+      </class> <!-- ui.DependencyTest -->
     </classes>
   </test> <!-- Reading browser details from testng.xml(failed) -->
 </suite> <!-- Failed suite [using listener] -->
